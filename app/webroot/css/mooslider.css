@@ -1,0 +1,46 @@
+.sgContainer { margin:10px 0 16px 0;overflow:hidden;position:relative; }
+.sgContainer .spinner { position:absolute;height:100%;width:100%;background:#fff url(/img/spinner.gif) no-repeat center center;z-index:1; }
+
+/* La máscara del scroller */
+.sgMask { position:relative;overflow:hidden; }
+.sgMaskPad {
+	position:relative;
+	padding:6px;
+	margin:0 62px;
+}
+
+.sgItems { position:relative;width:28000px; }
+.sgItemswrapper {
+	position:relative;
+
+	display:-moz-inline-stack;
+	display:inline-block;
+	vertical-align:top;
+	zoom:1;
+	*display:inline;
+}
+
+.sgItems .sgItem {
+	margin:0 5px 0 0;
+	text-align:center;
+	
+	display:-moz-inline-stack;
+	display:inline-block;
+	vertical-align:top;
+	zoom:1;
+	*display:inline;
+}
+
+.sgItems .sgItem img { border:#fff solid 0;vertical-align:middle; }
+.sgItems .sgItem .caption { display:block;padding:3px 3px 0 3px;font-weight:bold; }
+.sgPrev, .sgNext {
+	position:absolute;
+	top:0;
+	width:62px;
+	height:100%;
+	cursor:pointer;
+	outline:0;
+}
+.sgPrev { left:0;background:transparent url('/img/sgPrev.png') no-repeat center center; }
+.sgNext { right:0;background:transparent url('/img/sgNext.png') no-repeat center center; }
+.sgItems .sgItem.omega{ margin-right:0; }

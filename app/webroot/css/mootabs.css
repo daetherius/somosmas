@@ -1,0 +1,49 @@
+.mooTabContainer { margin:5px 0 25px 0; }
+.mooTabButtons{
+	border-bottom:#ddd solid 1px;
+	padding:3px 5px 0 15px;
+}
+
+.mooTabButtons a {
+	display:-moz-inline-stack;display:inline-block;vertical-align:top;zoom:1;*display:inline;
+	padding:0 15px;
+	margin:0;
+
+	border:#ccc solid 1px;
+	border-bottom:0;
+	background:#fff url(/img/prefooter.jpg) repeat-x left -8px;
+	line-height:30px;
+
+	text-align:center;
+	font-weight:bold;
+	font-size:14px;
+	color:#666;
+}
+
+.mooTabButtons a:hover,
+.mooTabButtons a.selected {
+	background-position:left 12px;
+	color:#6FA923;
+}
+.mooTabButtons a span {
+	display:-moz-inline-stack;display:inline-block;vertical-align:top;zoom:1;*display:inline;
+	height:14px;
+	margin:10px 0;
+	width:42px;
+	background:transparent url(/img/handpoint.png) no-repeat left top;
+}
+
+.mooTabButtons a.selected span,
+.mooTabButtons a:hover span {
+	background-position:left bottom;
+}
+
+
+.mooTabPanels { background:#fff; }
+.mooTabPanels > div {
+	display:none;
+	padding:10px 18px;
+}
+.mooTabPanels > div.selected {
+	display:block;
+}
